@@ -9,14 +9,10 @@ import {Perfil} from './components/Perfil';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image source={require('./assets/wave.png')}/>
-      <Text>Hola Mundo</Text>
-      <Text>----------------------------------------------</Text>
-      <Saludos/>  
-      <Text>----------------------------------------------</Text>
-      <Saludos2/>
-      <Text>----------------------------------------------</Text>
-      <Perfil/>
+      
+      <Perfil nombre="Amaya Lopez Santiago" carrera="Ingeniería en Sistemas Computacionales" materia="Programación Móvil" cuatrimestre="9" />
+      <Perfil nombre="Santiago Amaya" carrera="Ingeniería en Sistemas Computacionales" materia="Programación Movil" cuatrimestre="9" />
+
       <StatusBar style="auto" />
     </View>
   );
