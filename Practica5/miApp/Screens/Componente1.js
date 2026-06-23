@@ -1,22 +1,24 @@
-//Zona 1 importacion de archivos y componentes
+//Zona 1: Importaciones de archivos y Componentes
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
-import MenuScreen from './Screens/MenuScreen';
-import Practicasanti from './Screens/Practicasanti';
 
-//Zona 2 Main Componentes
+//Zona 2: Main - componentes 
 export default function App() {
   return (
-    <Practicasanti />
+    <view>
+        <text>Aquí va la primera practica de Componentes Nativos</text>
+    </view>
+    
   );
 }
 
-//Zona 3 Estilos y posicionamiento
+//Zona 3: Estilos
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    flexDirection: 'row',
   },
 });
