@@ -2,12 +2,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import MenuScreen from './Screens/MenuScreen';
-import Practicasanti from './Screens/Practicasanti';
 
 //Zona 2 Main Componentes
 export default function App() {
   return (
-    <Practicasanti />
+    <MenuScreen />
   );
 }
 

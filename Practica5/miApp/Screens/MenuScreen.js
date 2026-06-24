@@ -4,6 +4,8 @@ import { StyleSheet, View, Button} from 'react-native';
 import react, { useState } from 'react';
 import TarjetasScreen from './TarjetasScreen';
 import Componente1 from './Componente1';
+import PressableScreen from './PressableScreens';
+import SwitchScreen from './SwitchScreen';
 
 //Zona 2: Main - componentes 
 export default function App() {
@@ -13,6 +15,10 @@ export default function App() {
             return <TarjetasScreen />;
         case 'componente1':
             return <Componente1 />;
+        case 'Switch':
+            return <SwitchScreen />;
+        case 'pressable':
+            return <PressableScreen />;
         case 'menu':
         default:
         return (
@@ -20,6 +26,8 @@ export default function App() {
             <text>Menú de Practicas</text>
             <Button title="Practica Tarjetas" onPress={() => setScreen('tarjetas')} />
             <Button title="Practica Componente1" onPress={() => setScreen('componente1')} />
+            <Button title="Practica Switch" onPress={() => setScreen('Switch')} />
+            <Button title="Practica Pressable" onPress={() => setScreen('pressable')} />
             </view>
     
   ); //return 
