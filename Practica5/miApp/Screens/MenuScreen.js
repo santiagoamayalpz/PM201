@@ -6,6 +6,8 @@ import TarjetasScreen from './TarjetasScreen';
 import Componente1 from './Componente1';
 import PressableScreen from './PressableScreens';
 import SwitchScreen from './SwitchScreen';
+import FlatListScreen from './FlatList';
+import SectionListScreen from './SectionListScreen';
 
 //Zona 2: Main - componentes 
 export default function App() {
@@ -19,7 +21,12 @@ export default function App() {
             return <SwitchScreen />;
         case 'pressable':
             return <PressableScreen />;
+        case 'FlatList':
+            return <FlatListScreen />;
+        case 'SectionList':
+            return <SectionListScreen />;
         case 'menu':
+            
         default:
         return (
             <view>
@@ -28,6 +35,8 @@ export default function App() {
             <Button title="Practica Componente1" onPress={() => setScreen('componente1')} />
             <Button title="Practica Switch" onPress={() => setScreen('Switch')} />
             <Button title="Practica Pressable" onPress={() => setScreen('pressable')} />
+            <Button title="Practica FlatList" onPress={() => setScreen('FlatList')} />
+            <Button title="Practica SectionList" onPress={() => setScreen('SectionList')} />
             </view>
     
   ); //return 
